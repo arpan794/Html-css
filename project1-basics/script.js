@@ -42,4 +42,7 @@ function darkMode () {
 }
 
 
-
+const name = prompt("What is your name?");
+if (name) {
+    alert("Nice to meet you, " + name + "!");
+}
