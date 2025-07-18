@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Web Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <p id="aboutText">This is my very first HTML + CSS Web page!</p>
+      <h1>Welcome to My Website</h1>
+      <p id="aboutText">This is my very first HTML + CSS Web page!</p>
     </header>
 
     <nav>
@@ -18,27 +17,44 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
-      </ul>  
+      </ul>
     </nav>
 
     <main>
-        <section>
-            <h2>About Me!</h2>
-            <p>Hello! I am learning how to build website using html and css</p>
-        </section>
-        <div>
-            <button id="clickMeBtn" onclick="myFunc()">Click me</button>
-        </div>
-        <div>
-            <button id="toggleThemeBtn" onclick="darkMode()">Toggle Dark Mode</button>
-        </div>
+      <section>
+        <h2>About Me!</h2>
+        <img src="./images/IMG_20160613_150138473.jpg" alt="Profile photo" style="width: 150px;height: 100px"/>
+        <p>Hello! I am learning how to build website using html and css</p>
+      </section>
+      <div>
+        <button id="clickMeBtn" onclick="myFunc()">Click to change text</button>
+      </div>
+      <div>
+        <button id="toggleThemeBtn" onclick="darkMode()">
+          Toggle Dark Mode
+        </button>
+      </div>
+      <section class="form-section">
+        <h2>Register</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Register</button>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 My Website. All rights reserved</p>
+      <p>&copy; 2025 My Website. All rights reserved</p>
     </footer>
 
-    <script src="script.js" ></script>
-    
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
